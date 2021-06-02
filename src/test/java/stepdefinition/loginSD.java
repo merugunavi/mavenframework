@@ -40,7 +40,7 @@ public class loginSD {
 		lp.logbtn();
 	}
 
-	@Then("User enters into account overview page.")
+	@Then("User enters into account overview page")
 	public void user_enters_into_account_overview_page() {
 	   String log= driver.findElement(By.xpath("//b[normalize-space()='Welcome']")).getText();
 	   Assert.assertTrue(log.contains("Welcome"));
