@@ -28,7 +28,7 @@ public class RegSD {
 WebDriver driver;
 
 
-	@Given("User able to launch the parabank website.")
+	@Given("User able to launch the parabank website")
 public void setupurl() {
 		
 		WebDriverManager.chromedriver().setup();
@@ -42,14 +42,14 @@ public void setupurl() {
 		driver.get("https://parabank.parasoft.com/parabank/index.htm");
 
 	}
-	@When("User clicks the register button.")
+	@When("User clicks the register button")
 	public void click_the_register_button(){
 		HomePage hp=new HomePage(driver);
 		hp.register();
 	
 	}
 
-	@When("User able to enter the fields in the registration page.")
+	@When("User able to enter the fields in the registration page")
 	public void User_able_to_enter_the_fields_in_the_registration_page() throws Exception{
 		try {
 		 String reg="Signing up is easy!";
@@ -82,7 +82,7 @@ public void setupurl() {
 		re.regbt();
 	}
 
-	@Then("registration succesfull and enters into user account page.")
+	@Then("registration succesfull and enters into user account page")
 	public void registration_succesfull_and_enters_into_user_account_page() {
 	   String actual=driver.findElement(By.xpath("//b[normalize-space()='Welcome']")).getText();
 	   Assert.assertTrue(actual.contains("Welcome"));

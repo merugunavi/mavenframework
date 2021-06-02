@@ -8,7 +8,7 @@ Feature:parabank
     And able to view the login option
     When User able to enter username and password
     And User clicks the login button
-    Then User enters into account overview page.
+    Then User enters into account overview page
    
 
  

@@ -38,7 +38,7 @@ public class FundsTransferSD {
 		 By tfunds=By.xpath("//a[normalize-space()='Transfer Funds']");	 
 	}
 
-	@When("user able to click the funds tranfer tab.")
+	@When("user able to click the funds tranfer tab")
 	public void user_able_to_click_the_funds_tranfer_tab() {
 		LoginSucces ls=new LoginSucces(driver);
 		 ls.tfunds();	
@@ -54,7 +54,7 @@ public class FundsTransferSD {
 		
 	}
 
-	@Then("click the transfer button.")
+	@Then("click the transfer button")
 	public void click_the_transfer_button() {
 	   
 		FundsTransfer ft = new FundsTransfer(driver);
