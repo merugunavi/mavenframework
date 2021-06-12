@@ -14,19 +14,22 @@ import setuppage.SetupPage;
 			                "pretty", "html:target/html-report/cucumber-html-reports.html",
 			                "junit:target/cucumber-reports/cucumber.xml" }
 			) 
-public class ParabankTest extends AbstractTestNGCucumberTests {
+public class RunnerTest extends AbstractTestNGCucumberTests {
 
-		
+	
 	@BeforeMethod
 	public void setupwindow() {
+
 		SetupPage.setup();
 		
 	}
 	
 	@AfterMethod
 	public void closeDown() {
-		SetupPage.close();
-	}
+
+	SetupPage.close();
+	
+		}
 	
 	
 

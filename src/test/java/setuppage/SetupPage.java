@@ -10,9 +10,10 @@ import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SetupPage {
-static	WebDriver driver;
-
-public static  void setup() {
+	
+public static	WebDriver driver;
+	
+public static void setup() {
 		
 		WebDriverManager.chromedriver().setup();
 		
